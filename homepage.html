@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>Lets Learn</title>
+<link rel="shortcut icon" type="image/png" href="sitelogo.png" />
+  <script>
+  function Buy()
+  {
+    if(document.getElementById("x2").value=="Login")
+	alert("You need to Login!!");
+	else
+	window.location.assign("form.html");
+  }
+  function funct()
+  {
+    window.location.href="http://localhost/eCOMMERCE/form.html";
+  }
+  function fun3()
+  {
+    document.getElementsByClass("a2")[0].value="Choose Class";
+	document.getElementsByClass("a2")[1].value="Choose Exam";
+	document.getElementsByClass("a2")[2].value="Test Series";
+  }
+function fun(x)
+{
+  if(x==1)
+  window.location.assign("class8.html");
+  if(x==2)
+  window.location.assign("class9.html");
+  if(x==3)
+  window.location.assign("class10.html");
+  if(x==4)
+  window.location.assign("class11.html");
+  if(x==5)
+  window.location.assign("class12.html");
+}
+function fun1(x)
+{
+  if(x==1)
+  window.location.assign("exam1.html");
+  if(x==2)
+  window.location.assign("exam2.html");
+  if(x==3)
+  window.location.assign("exam3.html");
+  if(x==4)
+  window.location.assign("exam4.html");
+  if(x==5)
+  window.location.assign("exam5.html");
+}
+function fun2(x)
+{
+  if(x==1)
+  window.location.assign("test1.html");
+  if(x==2)
+  window.location.assign("test2.html");
+  if(x==3)
+  window.location.assign("test3.html");
+  if(x==4)
+  window.location.assign("test4.html");
+  if(x==5)
+  window.location.assign("test5.html");
+}
+</script>
+<style>
+.a2
+{
+  transform:scaleY(2);
+  border:none;
+  background-color:khaki;
+}
+#a1
+{
+color:lightgreen;
+text-decoration:none;
+font-size:30px;
+font-family:serif;
+text-shadow:2px 2px lightgreen;
+}
+#a3
+{
+  transform:scaleY(0.5);
+  background-color:lightpink;
+}
+#a5
+{
+ background-color:steelblue;
+}
+#a6
+{
+  border-radius:25px;
+  background-color:white;
+}
+#x1
+{
+  transform:scaleY(2);
+  background-color:khaki;
+}
+#i1
+{
+  height:200px;
+  background-color:black;
+}
+#i2
+{
+  position:relative;
+  top:90px;
+  margin-left:20px;
+  color:white;
+  font-family:sans-serif;
+  font-size:30px;
+  font-weight:40px;
+}
+#i3
+{
+  position:absolute;
+  left:805px;
+  margin-right:20px;
+  color:white;
+  font-family:sans-serif;
+  font-size:30px;
+  font-weight:40px;
+}
+.i6
+{
+  position:relative;
+  left:10px;
+}
+.cl1
+{
+  position:relative;
+  top:50px;
+  left:1500px;
+  margin-right:20px;
+  color:white;
+  font-family:sans-serif;
+  font-size:30px;
+  font-weight:40px;
+}
+.i4
+{
+color:black;
+  font-family:sans-serif;
+  font-size:30px;
+  font-weight:40px;
+}
+#i5
+{
+  text-align:center;
+}
+</style>
+</head>
+<body onclose="func()" id="a5">
+
+<center><a href="homepage.html" id="a1">Lets Learn</a></center>
+
+<div id="a3">
+
+<table cellspacing="100px" cellpadding="10px">
+<th onload="fun3()">
+<select class="a2">
+<option>Choose Class</option>
+<option onclick="fun(1)" class="a4">Class 8</option>
+<option onclick="fun(2)" class="a4">Class 9</option>
+<option onclick="fun(3)" class="a4">Class 10</option>
+<option onclick="fun(4)" class="a4">Class 11</option>
+<option onclick="fun(5)" class="a4">Class 12</option>
+</select>
+</th>
+<th onload="fun3()">
+<select class="a2">
+<option>Choose Exam</option>
+<option onclick="fun1(1)" class="a4">JEE</option>
+<option onclick="fun1(2)" class="a4">NEET</option>
+<option onclick="fun1(3)" class="a4">AIIMS</option>
+<option onclick="fun1(4)" class="a4">UPSC</option>
+<option onclick="fun1(5)" class="a4">GATE</option>
+</select>
+</th>
+<th onload="fun3()">
+<select class="a2">
+<option>Test Series</option>
+<option onclick="fun2(1)" class="a4">JEE Test Series</option>
+<option onclick="fun2(2)" class="a4">NEET Test Series</option>
+<option onclick="fun2(3)" class="a4">AIIMS Test Series</option>
+<option onclick="fun2(4)" class="a4">UPSC Test Series</option>
+<option onclick="fun2(5)" class="a4">GATE Test Series</option>
+</select>
+</th>
+
+<th>
+<input type="submit" value="Login" style="transform:scaleY(2);width:180px; background-color:khaki;text-align:left;" id="x2" onclick="funct()"/>
+</th>
+<th>
+<input type="submit" value="Buy Courses" id="x1" onclick="Buy()" />
+</th>
+<th>
+<input type="text" id="a6" placeholder="Search Articles on Google" style="transform:scaleY(2);width:400px; background-color:khaki;" onkeydown="if (event.keyCode==13||event.which==13)
+{location='http://www.google.com/search?q=' +encodeURIComponent(document.getElementById('a6').value);}" />
+</th>
+</tr>
+</table>
+</div>
+
+<p style="word-spacing:0.5cm;" style="color:white;">This is a paragraph.This is a paragraph.This isThis is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph. a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+</p>
+<div id="i1">
+<div>
+<span id="i2" class="c1">
+Terms and Conditions
+</span>
+</div>
+<center><div>
+<span id="i3">
+Connect With Us
+<div>
+<a href="https://www.youtube.com"><img src="connectlogo1.png" style="border-radius:100px"; class="i6" /></a>
+<a href="https://www.facebook.com"><img src="connectlogo5.png" style="border-radius:100px"; class="i6" /></a>
+<a href="https://www.instagram.com"><img src="connectlogo3.png" style="border-radius:100px"; class="i6" /></a>
+</div>
+</span>
+</div></center>
+<div>
+<span class="cl1">
+<select class="i4">
+<option class="i4">Products</option>
+<option class="i4">Computer Test Center</option>
+<option class="i4">Home Tutors</option>
+<option class="i4">Motivational Videos</option>
+<option class="i4">SSC Test Series</option>
+</select>
+</span>
+</div>
+</div>
+<p id="i5">&copy; 2019 Lets Learn</p>
+</body>
+</html>
